@@ -44,7 +44,7 @@ a {
 .Game {
   background-size: cover;
   margin: 0;
-  height: 140vh;
+  height: 170vh;
 }
 
 /* Game.js Background */
@@ -398,7 +398,6 @@ a {
       transform: rotate(-90deg);
       transform-origin: left top;
       width: 100vh;
-     
       overflow-x: scroll;
       overflow-y: hidden; /* Mencegah scroll ke arah vertikal */
       position: absolute;
@@ -408,7 +407,7 @@ a {
 
     .Homepage {
       overflow-x: hidden;
-      height: 390px; /* Sesuaikan tinggi agar sesuai dengan konten */
+      height: 415px; /* Sesuaikan tinggi agar sesuai dengan konten */
     }
   
     .homepage-menu {
@@ -435,15 +434,16 @@ a {
       margin: 0 20px;
     }
 
-    /* UNO Cards */
-.Card {
-  width: 7rem; /* You can adjust this value to your preference */
-}
+    .Card {
+      width: 7rem; /* You can adjust this value to your preference */
+      margin: 0 auto; /* Center the card horizontally */
+      margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+    }
 
     .Game {
       background-size: cover;
       margin: 0;
-      height: 100vh;
+      height: 120vh;
       overflow-x: scroll; /* Allowing horizontal scroll */
       overflow-y: hidden; /* Hiding vertical scroll */
     }
