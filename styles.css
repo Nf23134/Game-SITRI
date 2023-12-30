@@ -1,0 +1,1039 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  width: 98%;
+  z-index: 1000; /* Menetapkan z-index agar navbar berada di atas konten lainnya */
+}
+
+.content {
+  margin-top: 50px; /* Sesuaikan dengan tinggi navbar */
+  padding: 20px;
+  /* Isi gaya untuk konten halaman di sini */
+}
+
+/* Aturan CSS untuk ukuran default */
+.package-text,
+.oval-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px; /* Menjadikan ukuran teks menjadi 16px */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* Efek WordArt hitam */
+}
+
+.package {
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.oval {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 16px; /* Mengurangi padding untuk mengurangi ukuran oval */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; /* Menjadikan teks menjadi bold */
+  text-decoration: none; /* Menghapus garis bawah standar pada tautan */
+
+  transition: color 0.3s; /* Efek transisi perubahan warna */
+}
+
+.menu li a:hover {
+  color: #ff0000; /* Perubahan warna saat tautan ditekan (hover) menjadi merah */
+}
+
+.toggle {
+  display: none;
+  width: 30px;
+  height: 20px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg') no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* CSS untuk bagian Home */
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: cover; /* Memusatkan secara vertikal */
+  justify-content: cover;
+  margin: 0;
+}
+
+.section1 {
+  color: #000000;
+  text-align: left;
+  border-bottom: 2px solid #000000;
+  padding: 0;
+  background-image: url('Background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.section1 h1 {
+  margin-top: 90px;
+  font-size: 50px;
+  text-align: left;
+  margin-left: 25px;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Mengubah font menjadi Arial atau font lain yang diinginkan */
+  font-weight: normal; /* Menjadikan font lebih fleksibel */
+}
+
+.welcome-text {
+  font-size: 24px; 
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  margin-left: 20px; /* Atur margin kiri */
+  margin-right: 300px; /* Atur margin kanan */
+  line-height: 1.6; /* Atur jarak antara baris sesuai kebutuhan, nilai defaultnya adalah 1 */
+  /* Add other necessary styles */
+}
+
+.section3 {
+  background-color: #ffcccf;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  border-top: 2px solid #000000;
+  height: 430px; /* Sesuaikan tinggi sesuai kebutuhan */
+  position: relative;
+  width: 100%; /* Pastikan tidak ada padding atau margin dari parent element */
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box; /* Ini memastikan width dan height termasuk padding dan border */
+  overflow: hidden; /* Jika konten melebihi lebar, latar belakang akan tetap terlihat */
+}
+
+/* Section 2: Background putih dengan garis teks merah */
+.section2 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+  position: relative; /* Position relative untuk child element */
+}
+
+.section2 h2 {
+  font-weight: bold; /* Font Tebal */
+  font-family: Arial, sans-serif; /* Atur font family */
+}
+
+.red-text {
+  color: #ff0000; /* Warna Merah untuk tulisan "SITRI" */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Style Font WordArt */
+  text-shadow: 1px 1px 0 #ffcccb, 2px 2px 0 #ff9998, 3px 3px 0 #ff6665; /* Shadow untuk Style WordArt */
+  position: relative; /* Position relative untuk child element */
+}
+
+.red-text::after {
+  content: ''; /* Menambahkan content */
+  position: absolute; /* Position absolute untuk element yang ditambahkan */
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Jarak garis ke bawah */
+  height: 2px; /* Tinggi garis */
+  background: linear-gradient(to right, transparent 0%, #ff0000 25%, #ff6600 50%, #ff0000 75%, transparent 100%); /* Gradasi merah menyala */
+  animation: blinking 2s linear infinite; /* Animasi dengan durasi 2 detik */
+}
+
+/* Animasi berkedip */
+@keyframes blinking {
+  0%, 100% { opacity: 0; } /* Kedip - transparan */
+  50% { opacity: 1; } /* Tidak transparan */
+}
+
+.points p {
+  margin: 0;
+  font-size: 18px; /* Ganti ukuran sesuai yang diinginkan */
+  line-height: 2.0; /* Atur jarak antara baris sesuai kebutuhan, nilai defaultnya adalah 1 */
+}
+
+.image {
+  width: 100%;
+}
+
+/* Optional: Add margins, adjust image size, or other necessary styles */
+
+.content {
+  margin-left: 20px;
+  text-align: left;
+  width: 100%;
+  text-align: justify;
+}
+
+.points {
+  margin-top: 10px;
+}
+
+.points ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.increase-size {
+  font-size: 32px; /* Ganti ukuran sesuai yang diinginkan */
+  margin-bottom: 20px; /* Atur spasi di bawah judul */
+}
+
+.points ul li {
+  text-align: justify;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.image {
+  margin-left: auto;
+}
+
+.image img {
+  max-width: 70%; /* optional: adjust image size as needed */
+}
+
+.frame.active {
+  display: block;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.feature-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.feature-title {
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.feature-description {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h3 {
+  border-bottom: 2px solid #007bff; /* Add a blue underline */
+  padding-bottom: 5px; /* Add some spacing between the heading and the underline */
+  text-align: left;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  }
+
+  .section5 {
+    color: #000000;
+    padding: 0;
+    background-image: url('jjk.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: space-between; /* Align items at the ends */
+}
+
+.section5 .character-img {
+  max-width: 500px; /* Adjust the size of the character image */
+  /* Added to position the character to the left */
+}
+
+.character-img {
+  order: 1; /* Mengubah urutan karakter menjadi kedua */
+  align-items: right;
+  margin-left: 180px;
+}
+
+.contact-text {
+  order: 2;
+  background-color: rgba(255, 255, 255, 0.5); /* Latar belakang transparan */
+  padding: 20px; /* Beri ruang di dalam kotak */
+  margin-left: 70px;
+}
+
+.contact-title {
+  font-family: 'Snap ITC', sans-serif; /* Font Snap ITC */
+  color: darkred; /* Warna teks merah tua */
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  align-items: center; /* Mengatur teks agar sejajar dengan ikon */
+  display: flex;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: black; /* Warna ikon */
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center; /* Mengatur teks agar sejajar dengan ikon */
+}
+
+.contact-info a i {
+  font-size: 50px; /* Ukuran ikon */
+  margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+/* Styling untuk setiap kotak (box) */
+.box {
+  height: 500px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fcfbfb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Menambahkan margin dari 20px menjadi 10px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: initial;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section6 {
+  color: #000000;
+  background-image: url('dr.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 1100px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between; /* Align items at the ends */
+  flex-direction: column;
+  padding: 2px;
+}
+
+.online {
+  font-family: Calibri, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-left: 20px;
+}
+
+.start-button {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: blue;
+  color: #fff;
+  padding: 15px 400px; /* Mengatur padding kiri dan kanan lebih besar */
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px; /* Menambah lengkungan pada tombol */
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text h5 {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-weight: bold;
+  font-size: 40px; /* Mengatur ukuran font menjadi 40px */
+  margin: 20px 0 10px 20px; /* Menyesuaikan margin */
+  color: #333;
+  text-align: left; /* Untuk mengatur teks agar berada di kiri */
+  margin-left: 70px;
+}    
+
+.start-button:hover {
+  background-color: red;
+}    
+  
+  .logo {
+    position: absolute;
+    left: 30px;
+    max-width: 30%;
+    margin-bottom: 0px;
+  }
+  
+  .logo img {
+    width: 40%;
+  }
+  
+  .additional-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px; /* Memberikan margin top sebesar 20px */
+    margin-bottom: 10px;
+    margin: 10px; /* Menambahkan margin dari 20px menjadi 10px */
+  }
+
+   
+  .movie-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .movie-info img {
+    margin-right: 15px;
+    max-width: 50%; /* Mengatur lebar maksimum gambar */
+    height: auto; /* Memastikan aspek rasio gambar tetap terjaga */
+    display: block; /* Menghindari celah kosong di sekitar gambar */
+    margin: 0 auto; /* Untuk menengahkan gambar jika diperlukan */
+  }  
+  
+  .movie-details {
+    flex: 1;
+    margin-left: 30px;
+  }
+  
+  .movie-title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orange; /* Atur warna oranye */
+    text-transform: uppercase;
+    text-shadow: 2px 2px black; /* Efek shadow WordArt */
+  }
+  
+  .movie-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .play-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .trailer-button {
+    background-color: red;
+    color: white;
+  }
+
+  .popup {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+  .popup_content {
+    width: 80%;
+    max-width: 600px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the popup */
+    background-color: #fff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for better visibility */
+    border-radius: 8px; /* Rounded corners for a softer appearance */
+    padding: 24px;
+    text-align: center; /* Center the content */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.25);
+    opacity: 0;
+
+    transition: all .5s .1s;
+    overflow-y: auto; /* Menambahkan overflow-y untuk mengaktifkan bilah gulir vertikal */
+    max-height: 80%; /* Atur ketinggian maksimum sesuai kebutuhan, misalnya 80% dari tinggi layar */
+  }
+  
+  .popup__header {
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+  }
+  
+  .popup__header h1 {
+    font-size: 25px; /* Slightly reduced the font size for a more balanced appearance */
+    margin-bottom: 10px; /* Adjusted spacing */
+  }
+  
+  .popup__header h2 {
+    font-size: 15px; /* Reduced font size for a hierarchical structure */
+    color: #777; /* Lightened the color for a subtle difference */
+  }
+  
+  .popup__text {
+    line-height: 1.6; /* Increased line height for improved readability */
+  }
+  
+  #popup:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #popup:target .popup_content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .popup__close:link,
+  .popup__close:visited {
+position: absolute;
+top: 12px;
+right: 20px;
+text-decoration: none;
+color: #000;
+font-size: 30px;
+display: inline-block;
+line-height: 1;
+transition: all .3s;
+  }
+
+  .popup__close:hover,
+  .popup__close:active {
+    color: #555;
+  }
+
+  .popup__text {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10 auto;
+    padding: 20px;
+    font-size: 14px;
+  } 
+
+  .popup__text h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .popup__text strong {
+    font-weight: bold;
+  }
+
+  .popup__text ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  .popup__text li {
+    margin-bottom: 5px;
+  }
+
+  .popup__text p {
+    margin-bottom: 15px;
+  }
+
+  .section7 {
+    color: #000000;
+    text-align: left;
+    border-bottom: 2px solid #000000;
+    padding: 0;
+    background-image: url('aot.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.top-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-section img {
+    width: 200px; /* Sesuaikan dengan ukuran gambar */
+    height: auto;
+    margin: 10px;
+}
+
+.middle-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features {
+  text-align: center;
+  width: 200px; /* Sesuaikan dengan ukuran persegi panjang */
+  height: 100px; /* Sesuaikan dengan ukuran persegi panjang */
+  border: 1px solid black; /* Ganti dengan style yang diinginkan */
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.features:active {
+  background-color: red; /* Ubah warna ketika ditekan */
+}
+
+.features p {
+  font-size: 18px; /* Ubah ukuran font */
+  font-weight: bold; /* Teks menjadi bold */
+  margin: 0; /* Atur margin agar rata */
+  text-align: center;
+}
+
+.features p::after {
+  content: "";
+  display: block;
+  width: 40px; /* Sesuaikan dengan lebar yang diinginkan */
+  border-bottom: 2px solid black; /* Sesuaikan style garis bawah */
+  margin: 10px auto; /* Atur jarak dan posisi garis bawah */
+}
+
+.emoji {
+    font-size: 40px; /* Sesuaikan dengan ukuran emoji */
+    margin-bottom: 10px; /* Jarak antara emoji dan teks */
+    display: block;
+    /* style lainnya */
+}
+
+.materi {
+  font-family: 'Algerian', sans-serif;
+  margin-left: 100px;
+  color: #fcfbfb;
+  text-align: left;
+  font-size: 80px;
+  margin-bottom: 5px; /* Menambahkan jarak antara kalimat */
+  /* Style lainnya */
+}
+
+.trigono {
+  font-family: 'Algerian', sans-serif;
+  margin-left: 100px;
+  color: #fcfbfb;
+  text-align: left;
+  font-size: 80px;
+  margin-top: 5px; /* Menambahkan jarak antara kalimat */
+  /* Style lainnya */
+}
+
+.tombol {
+  display: block;
+  width: 120px; /* Sesuaikan lebar tombol */
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: blue; /* Warna teks biru */
+  background-color: transparent;
+  border: 2px solid blue; /* Border warna biru */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-top: -40px; /* Nilai negatif untuk mengangkat tombol lebih tinggi */
+  margin-left: 100px; /* Jarak dari kiri */
+}
+
+.tombol:hover {
+  color: red; /* Warna teks merah saat tombol dihover */
+  border-color: red; /* Border warna merah saat tombol dihover */
+}
+
+.section9 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  height: 100px; /* Sesuaikan tinggi sesuai kebutuhan */
+  position: relative; /* Position relative untuk child element */
+}
+
+.section8 {
+  background: #fff;
+  color: #000;
+  height: auto; /* Sesuaikan tinggi sesuai kebutuhan */
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.toc-box {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float: left; /* Mengatur posisi ke kiri */
+}
+
+.toc-box ol {
+  list-style-type: disc; /* Mengatur bullets */
+  padding-left: 20px; /* Jarak antara bullets dan teks */
+}
+
+.toc-box li {
+  margin: 5px 0; /* Jarak antara setiap item */
+  margin-left: 10px;
+}
+
+.container {
+  clear: left; /* Mengatur agar elemen muncul di bawah kotak sebelumnya */
+  text-align: left; /* Untuk menyelaraskan konten ke kiri */
+  padding: 10px; /* padding untuk konten di dalam kotak daftar isi */
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.section8 h1 {
+  font-size: 24px; /* Ubah ukuran font sesuai keinginan Anda */
+  margin-top: 100px; /* Jarak dari elemen sebelumnya */
+  text-align: center; /* Untuk menyelaraskan teks ke tengah */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .toggle {
+    display: block;
+  }
+  
+  .package-text,
+  .oval-text {
+    font-size: 14px; /* Mengurangi ukuran teks untuk layar HP */
+  }
+
+  .oval {
+    padding: 8px 16px; /* Mengurangi padding untuk layar HP */
+  }
+
+  .welcome-text {
+    font-size: 18px; 
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    margin-left: 20px; /* Atur margin kiri */
+    margin-right: 20px; /* Atur margin kanan */
+    /* Add other necessary styles */
+  }
+
+  .navbar {
+    width: 95%;
+  }
+
+  /* Style untuk Section 1 */
+.section1 {
+  height: 650px;
+  margin-top: 50px;
+}
+
+.section1 h1 {
+  margin-top: 30px;
+}
+
+.points p {
+  margin: 0;
+  font-size: 16px; /* Ganti ukuran sesuai yang diinginkan */
+  line-height: 1.2; /* Atur jarak antara baris sesuai kebutuhan, nilai defaultnya adalah 1 */
+}
+
+.section3 {
+  height: 520px; /* Sesuaikan tinggi sesuai kebutuhan */
+}
+
+.section5 {
+  flex-direction: column;
+  align-items: center; /* Menengahkan secara vertikal */
+  height: 830px; /* Menambahkan tinggi */
+}
+
+.contact-text {
+  order: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  max-width: 500px; /* Membatasi lebar */
+  text-align: center; /* Mengatur teks ke tengah */
+}
+
+.section5 .character-img {
+  max-width: 370px; /* Adjust the size of the character image */
+  /* Added to position the character to the left */
+  order: 2; /* Mengubah urutan karakter menjadi kedua */
+  margin-left: 0; /* Menghapus margin kiri agar elemen berdekatan */
+  align-items: center; /* Menengahkan secara vertikal */
+}
+
+.contact-info {
+  align-items: center; /* Mengatur teks agar sejajar dengan ikon */
+  display: grid;
+}
+
+/* Styling untuk tombol di tengah di bawah gambar */
+.box button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 auto; /* Membuat tombol menjadi tengah */
+  margin-top: 30px;
+  border: none;
+  border-radius: 30px; /* Setengah dari tinggi tombol */
+  display: block;
+
+}
+
+.text h5 {
+  font-size: 15px; /* Mengatur ukuran font menjadi 40px */
+  margin-left: 25px;
+} 
+
+.online {
+  font-size: 15px;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.logo {
+  max-width: 25%;
+  left: 10px;
+}
+
+.box {
+  height: 200px;
+}
+
+.box {
+  margin-bottom: 5px; /* Mengatur jarak antara .box dan .additional-content */
+}
+
+.additional-content {
+  margin-top: 10px; /* Mengatur margin-top menjadi 10px */
+}
+
+.movie-info {
+  flex-direction: column; /* Mengubah tata letak menjadi kolom pada perangkat seluler */
+}
+
+.movie-info img {
+  order: 1; /* Mengatur urutan gambar agar berada di atas teks */
+  margin-bottom: 10px; /* Memberikan margin antara gambar dan teks */
+  max-width: 100%; /* Mengatur lebar maksimum gambar */
+}
+
+.movie-details {
+  order: 2; /* Mengatur urutan detail film menjadi di bawah gambar */
+  margin-left: 0; /* Menghapus margin kiri pada detail film */
+}
+
+.movie-title {
+  font-size: 35px;
+}
+
+.movie-description {
+  font-size: 18px;
+}
+
+.section6 {
+  height: 1150px;
+}
+
+.materi {
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.trigono {
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.tombol {
+  margin-left: 25px; /* Jarak dari kiri */
+  margin-top: -10px; /* Nilai negatif untuk mengangkat tombol lebih tinggi */
+}
+
+.section7 {
+  height: 300px;
+}
+
+.features {
+  display: flex;
+}
+
+.features p {
+  font-size: 14px; /* Ukuran font diatur ulang untuk perangkat seluler */
+  margin: 0; /* Atur margin agar rata */
+  text-align: center;
+}
+
+.section8 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container p {
+  font-size: 15px;
+}
+
+.section8 h1 {
+  margin-top: 20px; /* Jarak dari elemen sebelumnya */
+}
+
+.section9 {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.features {
+  flex: 0 0 auto;
+  width: 200px; /* Tetap lebar .features */
+  height: 50px; /* Mengurangi tinggi .features */
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px; /* Mengurangi padding horizontal */
+  margin: 10px 10px 0 10px; /* Margin top 10px, margin lainnya diatur ulang */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.features .emoji {
+  margin-right: 5px;
+  font-size: 20px; /* Mengubah ukuran emoji */
+}
+
+.features p {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 18px; /* Memperbesar ukuran teks */
+}
+
+/* CSS */
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  /* Sesuaikan properti konten yang dapat discroll */
+  width: 1000px; /* Misalnya */
+  overflow: auto;
+}
+
+/* CSS untuk Tombol Scroll */
+.scroll-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px; /* Atur lebar tombol */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 1;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Atur posisi tombol kiri */
+.scroll-btn.prev {
+  left: 0;
+}
+
+/* Atur posisi tombol kanan */
+.scroll-btn.next {
+  right: 0;
+}
+
+/* CSS untuk mengatur perilaku scroll pada tombol */
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth; /* Efek scroll halus */
+}
+}
